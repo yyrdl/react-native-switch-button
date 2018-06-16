@@ -1,13 +1,10 @@
-<style type="text/csss">
- .demoImage{
-     width:150
- }
-</style>
+ 
 # React Native Switch Button
 
-<div align="center">
-    <img class = "demoImage" src ="https://github.com/yyrdl/react-native-switch-button/blob/master/example/demo.gif" />
-</div>
+ 
+
+<img src = "https://github.com/yyrdl/react-native-switch-button/blob/master/example/demo.gif" width= 240/>
+
  
 # Installation
 
