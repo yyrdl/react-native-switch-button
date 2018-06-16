@@ -1,8 +1,8 @@
 # React Native Switch Button
 
-<li align="center">
-   <img src = "https://github.com/yyrdl/react-native-switch-button/blob/master/example/demo.gif" width= 240/>
-</li>
+
+<img src = "https://github.com/yyrdl/react-native-switch-button/blob/master/example/demo.gif" width= 240/>
+
  
 # Installation
 
