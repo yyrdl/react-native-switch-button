@@ -1,5 +1,5 @@
 {
-  "name": "react-native-switch-button",
+  "name": "@yyrdl/react-native-switch-button",
   "version": "0.0.1",
   "private": false,
   "dependencies": {

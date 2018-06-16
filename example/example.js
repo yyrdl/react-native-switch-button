@@ -1,6 +1,6 @@
 import React from "react";
 import {View,Text} from "react-native";
-import SwitchButton from "react-native-switch-button";
+import SwitchButton from "@yyrdl/react-native-switch-button";
  
 
 export default class App extends React.Component{
