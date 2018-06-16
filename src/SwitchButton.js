@@ -60,7 +60,7 @@ class SwitchButton extends React.PureComponent{
 
         let active = ! this.state.active;
 
-        if("function" === typeof this.props.onStateChange){
+        if("function" === typeof this.props.onChangeState){
 
             this.props.onChangeState(active);
         }
@@ -111,7 +111,6 @@ class SwitchButton extends React.PureComponent{
                >
                  <View
                      style={{
-                          flexDirection:this.state.isHorizontal ? "row":"column",
                           width:this.props.slotWidth,
                           height:this.props.slotHeight,
                           borderRadius:this.state.slotRadius,
