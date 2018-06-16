@@ -15,7 +15,7 @@ class SwitchButton extends React.PureComponent{
         slotWidth:PropTypes.number.isRequired,
         slotHeight:PropTypes.number.isRequired,
         circleRadius:PropTypes.number.isRequired,
-        onStateChange:PropTypes.func,
+        onChangeState:PropTypes.func,
         activeSlotColor:PropTypes.string,
         inactiveSlotColor:PropTypes.string,
         activeCircleColor:PropTypes.string,
@@ -62,7 +62,7 @@ class SwitchButton extends React.PureComponent{
 
         if("function" === typeof this.props.onStateChange){
 
-            this.props.onStateChange(active);
+            this.props.onChangeState(active);
         }
 
         this.setState({
