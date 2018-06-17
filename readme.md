@@ -92,6 +92,7 @@ export default class App extends React.Component{
 * `inactiveSlotColor` {String} the color of the slot when the switch is inactive,default `#ccc`
 * `activeCircleColor` {String} the color of the circle when the switch is active,default `black`
 * `inactiveCircleColor` {String} the color of the circle when the switch is inactive,default `black`
+* `activated` {Boolean}  the initial state of the button
 
 # Events
 

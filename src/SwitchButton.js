@@ -15,6 +15,7 @@ class SwitchButton extends React.PureComponent{
         slotWidth:PropTypes.number.isRequired,
         slotHeight:PropTypes.number.isRequired,
         circleRadius:PropTypes.number.isRequired,
+        activated:PropTypes.bool,
         onChangeState:PropTypes.func,
         activeSlotColor:PropTypes.string,
         inactiveSlotColor:PropTypes.string,
@@ -56,6 +57,12 @@ class SwitchButton extends React.PureComponent{
         } 
     }
 
+    componentDidMount(){
+        if(!!this.props.activated != this.state.active){
+            this.onPress();
+        }
+    }
+
     onPress(){
 
         let active = ! this.state.active;
@@ -82,7 +89,7 @@ class SwitchButton extends React.PureComponent{
         if(this.state.isHorizontal){
 
             circleAnimationConfig.toValue = active ? this.state.boxWidth - this.state.circleRadius*2 : 0;
-            slotAnimationConfig.toValue  = active ? this.props.slotWidth: this.state.circleRadius*2;
+            slotAnimationConfig.toValue  = active ? this.props.slotWidth : this.state.circleRadius*2;
         }else{
             
             circleAnimationConfig.toValue = active ? this.state.boxHeight -this.state.circleRadius*2 : 0 ;
