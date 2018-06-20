@@ -93,6 +93,7 @@ export default class App extends React.Component{
 * `activeCircleColor` {String} the color of the circle when the switch is active,default `black`
 * `inactiveCircleColor` {String} the color of the circle when the switch is inactive,default `black`
 * `activated` {Boolean}  the initial state of the button
+* `animationDuration` the duration of the animation when state changed
 
 # Events
 

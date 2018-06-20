@@ -16,6 +16,7 @@ class SwitchButton extends React.PureComponent{
         slotHeight:PropTypes.number.isRequired,
         circleRadius:PropTypes.number.isRequired,
         activated:PropTypes.bool,
+        animationDuration:PropTypes.number,
         onChangeState:PropTypes.func,
         activeSlotColor:PropTypes.string,
         inactiveSlotColor:PropTypes.string,
@@ -77,11 +78,11 @@ class SwitchButton extends React.PureComponent{
         });
         
         let circleAnimationConfig = {
-             duration:200
+             duration:this.props.animationDuration || 400
         };
 
         let slotAnimationConfig = {
-            duration:200
+            duration:this.props.animationDuration || 400
         };
 
       
